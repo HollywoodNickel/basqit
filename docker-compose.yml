@@ -1,0 +1,11 @@
+services:
+  mongo-basqit-dev:
+    image: mongo:latest
+    container_name: mongo-basqit-dev
+    ports:
+      - "27017:27017"
+    volumes:
+      - mongo-basqit-dev-data:/data/db
+
+volumes:
+  mongo-basqit-dev-data:
